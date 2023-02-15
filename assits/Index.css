@@ -1,0 +1,136 @@
+body {
+    background-color: #78fcfc;
+}
+
+[data-bs-theme="dark"] body {
+    background-color: darkorange;
+}
+
+section {
+    min-height: 100vh; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.firstHeadline {
+    color: darkblue;
+}
+
+.secondHeadline {
+    color: crimson;
+}
+
+.thirdHeadline {
+    color:black;
+}
+
+#thirdSection {
+    background-color: deepskyblue;
+}
+
+[data-bs-theme="dark"] #thirdSection {
+    background-color: crimson;
+}
+
+#fourthSection {
+    background-color: gold;
+}
+
+[data-bs-theme="dark"] #fourthSection {
+    background-color: blue;
+}
+
+#secondSection {
+    background-color: deepskyblue;
+}
+
+[data-bs-theme="dark"] #secondSection {
+    background-color: crimson ;
+}
+
+#fifthSection {
+    background-color: gold;
+}
+
+[data-bs-theme="dark"] #fifthSection {
+    background-color: blue;
+}
+
+#sixthSection {
+    background-color: tomato;
+}
+
+[data-bs-theme="dark"] #sixthSection {
+    background-color: green;
+}
+
+#seventhSection {
+    background-color: tomato;
+    padding-bottom: 20px;
+}
+
+#eighthsection {
+    background-image: url(alvaro-serrano-hjwKMkehBco-unsplash.jpg);
+    background-size: cover;
+}
+
+[data-bs-theme="dark"] #seventhSection {
+    background-color: green;
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+.firstImage {
+    padding-bottom: 30px;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.secondImage {
+    padding-top: 50px;
+}
+
+.firstImage {
+    width: 300px;
+}
+
+.accordion-item {
+    padding-bottom: 15px;
+}
+
+.card-img-wrapper {
+    position: relative;
+    height: 190px;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    transition: transform .5s ease;
+}
+
+.card-img-wrapper:hover img {
+    transform: scale(1.2);
+}
+.card-img-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+svg {
+    display: none;
+}
+
+
+
+
+
+
