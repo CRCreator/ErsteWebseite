@@ -138,11 +138,24 @@ svg {
     100% {opacity: 1;}
 }
 
-.fade-in-image  {
-    opacity: 50%;
-}
-
-.fade-in-image:hover {
-    opacity: 100%;
-    transition: opacity 1s;
+@media print {
+    /* styles here  */
+    img {
+        display: none;
+    }
+    .collapse:not(.show) {
+        display: block;
+    }
+    .btn {
+        display: none;
+    }
+    .section {
+        min-height: 0px;
+    }
+    .navbar {
+        display: none;
+    }
+    .card-footer {
+        display: none;
+    }
 }
