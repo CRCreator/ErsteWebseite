@@ -60,3 +60,25 @@
         })
     })
   })()
+
+  
+  $(document).ready(()=>{
+
+		function checkVisability() {
+			var elm = $('section');
+
+			elm.each(function () {
+				if ($(this).inView("topOnly", 50)) {
+					$(this).addClass("visible");
+				}
+			});
+		}
+
+		checkVisability();
+
+		$(window).scroll(()=>{
+			console.log('scroll');
+			checkVisability();
+		});
+
+	});

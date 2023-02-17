@@ -129,8 +129,20 @@ svg {
     display: none;
 }
 
+.visible .fade-in-text {
+    animation: fadeIn 5s;
+}
 
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
 
+.fade-in-image  {
+    opacity: 50%;
+}
 
-
-
+.fade-in-image:hover {
+    opacity: 100%;
+    transition: opacity 1s;
+}
