@@ -9,7 +9,31 @@
     <link href="assits/Index.css" rel="stylesheet">
   </head>
   <body>
+   
+          <!-- Button trigger modal -->
+      <button type="button" class="d-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+      </button>
 
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Hallo da, sag uns doch deine name</h1>
+            </div>
+            <div class="modal-body">
+              <form onsubmit="return false;">
+                <label for="fname">Name:</label><br>
+                <input required type="text" id="myInput" name="fname" placeholder=""><br><br>
+                <button id="closeBtn" type="submit" class="btn btn-primary">Submit</button>
+              </form>  
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
               <!-- Navbar mit 4 links -->
@@ -80,7 +104,7 @@
     </div>
     <div class="col-12 col-md-8">
       <div class="fade-in-text">
-        <h3>Hallo da, willst du wissen worüber dieses Artikel geht? Dieses Artikel geht über die Top 5 sachen in alle dinge wie z.B. die größten Berge in der Welt in 2023</h3>
+        <h3>Hallo <span id="p1"></span>, willst du wissen worüber dieses Artikel geht? Dieses Artikel geht über die Top 5 sachen in alle dinge wie z.B. die größten Berge in der Welt in 2023</h3>
       </div>
     </div>
  
@@ -407,7 +431,7 @@
           <a class="btn btn-primary" href="mailto:HamzaFarzan.Zubair@init.de">Hier drücken um neue Themen oder Feedback mir Per E-mail schicken </a> 
       </div>
       <div class="col-12 text-center pt-5">
-        <button class="btn btn-danger" onclick="window.print()">Print this page</button>
+        <button class="btn btn-danger" onclick="window.print()">Drück die seite</button>
       </div> 
 
     </div> 

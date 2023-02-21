@@ -10,6 +10,32 @@
   </head>
   <body>
 
+         <!-- Button trigger modal -->
+      <button type="button" class="d-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Hey there, why dont you tell us your Name</h1>
+            </div>
+            <div class="modal-body">
+              <form onsubmit="return false;">
+                <label for="fname">Name:</label><br>
+                <input required type="text" id="myInput" name="fname" placeholder=""><br><br>
+                <button id="closeBtn" type="submit" class="btn btn-primary">Submit</button>
+              </form>  
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
     <div class="container"></div>
         <!-- Navbar mit 4 links -->
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
@@ -80,7 +106,7 @@
     </div>
     <div class="col-12 col-md-8">
       <div class="fade-in-text">
-        <h3>Hey there, do you want to know what this article is about? Well this is about the Top 5 things in every category in 2023 e.g. Mountains or Buildings.</h3>
+        <h3>Hey <span id="p1"></span>, do you want to know what this article is about? Well this is about the Top 5 things in every category in 2023 e.g. Mountains or Buildings.</h3>
       </div>
     </div>
   </div>

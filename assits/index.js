@@ -62,7 +62,7 @@
   })()
 
   
-  $(document).ready(()=>{
+  $(document).ready(() => {
 
 		function checkVisability() {
 			var elm = $('section');
@@ -76,9 +76,46 @@
 
 		checkVisability();
 
-		$(window).scroll(()=>{
+		$(window).scroll(() => {
 			console.log('scroll');
 			checkVisability();
 		});
 
+    if ($("#myModal").length === 0) {
+      return;
+    }
+
+
+    const myModal = new bootstrap.Modal(document.getElementById('myModal'));
+    const modalToggle = document.getElementById('toggleMyModal');
+
+    if (sessionStorage.getItem("Username") === null) {
+      myModal.show(modalToggle);
+    } else {
+      var inputVal = sessionStorage.getItem("Username");
+      getInputValue(inputVal);
+    }
+
+    const closeBtn = document.getElementById('closeBtn');
+    closeBtn.addEventListener("click", function() {
+        // Selecting the input element and get its value 
+        var inputVal = document.getElementById("myInput").value;
+      getInputValue(inputVal);
+    });
+
+    function getInputValue(inputVal ) {
+
+
+      if (inputVal !== "") {
+        myModal.hide(modalToggle);
+      }
+      
+      // Displaying the value
+
+      document.getElementById("p1").innerHTML = inputVal;
+      sessionStorage.setItem("Username", inputVal);
+
+    }
 	});
+
+  
